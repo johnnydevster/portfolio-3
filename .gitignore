@@ -34,3 +34,18 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Sanity
+
+# Logs
+sanity/logs
+sanity/*.log
+
+# Coverage directory used by tools like istanbul
+sanity/coverage
+
+# Dependency directories
+sanity/node_modules
+
+# Compiled sanity studio
+santity/dist
