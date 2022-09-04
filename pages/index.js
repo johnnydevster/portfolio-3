@@ -1,17 +1,28 @@
 import Container from "../ui/layout/Container";
 import Section from "../ui/layout/Section";
 import Layout from "../ui/layout/Layout";
+import Paragraph from "../ui/utilities/Paragraph";
+import Heading from "../ui/utilities/Heading";
 
 export default function Home() {
   return (
     <Layout>
       <Container className="">
-        <Section className="bg-sky-900 text-sky-200">
-          <h1 className="text-6xl">Heading 1</h1>
-          <h2>Heading 2</h2>
-          <h3>Heading 3</h3>
-          <h4>Heading 4</h4>
-          <h5>Heading 5</h5>
+        <Section className="">
+          <Heading>Heading 1</Heading>
+          <Heading size="lg">Heading 2</Heading>
+          <Heading size="md">Heading 3</Heading>
+          <Heading size="sm">Heading 4</Heading>
+          <Paragraph>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            posuere dolor ac accumsan consectetur. Quisque eleifend libero odio.
+            Sed posuere congue lacinia. Nulla sollicitudin, est id ullamcorper
+            tempor, tortor erat suscipit ante, id accumsan elit est ut dolor.
+            Nulla pharetra egestas vulputate. Aenean eget imperdiet lorem. Duis
+            bibendum libero eu felis auctor, a faucibus ipsum pharetra. Vivamus
+            vestibulum, arcu dignissim tristique porttitor, lectus neque
+            pellentesque sem, feugiat venenatis metus sem sed augue.
+          </Paragraph>
         </Section>
       </Container>
     </Layout>
