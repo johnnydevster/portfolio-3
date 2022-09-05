@@ -2,7 +2,7 @@ import { twMerge } from "tailwind-merge";
 
 export default function Heading({
   component: Component = "h1",
-  color = "yellow",
+  color = "white",
   size = "xl",
   children,
   className = "",
@@ -19,6 +19,8 @@ export default function Heading({
       break;
     case "blue":
       colors = "from-sky-400 to-sky-300";
+    case "white":
+      colors = "from-slate-200 to-slate-100";
   }
 
   switch (size) {

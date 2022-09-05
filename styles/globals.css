@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+    :root {
+        --header-height-expanded: 120px;
+        --header-height-minimized: 80px;
+    }
+
     .theme-first {
         --color-primary: hsl
     }

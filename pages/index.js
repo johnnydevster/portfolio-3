@@ -9,10 +9,9 @@ export default function Home() {
     <Layout>
       <Container className="">
         <Section className="">
+          <div className="bg-black h-20 bg-opacity-40"></div>
           <Heading>Heading 1</Heading>
           <Heading size="lg">Heading 2</Heading>
-          <Heading size="md">Heading 3</Heading>
-          <Heading size="sm">Heading 4</Heading>
           <Paragraph>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
             posuere dolor ac accumsan consectetur. Quisque eleifend libero odio.

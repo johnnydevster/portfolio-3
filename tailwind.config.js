@@ -13,7 +13,19 @@ module.exports = {
       md: "768px",
       lg: "1024px",
     },
-    extend: {},
+
+    extend: {
+      spacing: {
+        "header-lg": "var(--header-height-expanded)",
+        "header-md": "var(--header-height-minimized)",
+      },
+      colors: {
+        "slate-dark": {
+          DEFAULT: "#090e19",
+          lighter: "#0c1222",
+        },
+      },
+    },
   },
   plugins: [],
 };
