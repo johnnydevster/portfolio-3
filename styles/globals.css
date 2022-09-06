@@ -11,8 +11,41 @@
     li {
         list-style-type: none;
     }
+}
 
-    .theme-first {
-        --color-primary: hsl
+@layer components {
+    /* ------------------------------------------------ Spacing */
+    
+    .container {
+        @apply px-4 sm:px-6 lg:px-10 mx-auto w-full;
+        max-width: 1024px;
     }
+
+    .section {
+        @apply my-24;
+    }
+
+    /* ------------------------------------------------ Fonts */
+
+    .heading-sm {
+        @apply text-xl font-bold tracking-wide
+    }
+
+    .heading {
+        @apply heading-sm text-3xl
+    }
+
+    .heading-lg {
+        @apply heading-sm text-5xl
+    }
+
+    .body {
+        @apply text-lg
+    }
+
+    .label {
+        @apply uppercase font-semibold
+    }
+
+
 }

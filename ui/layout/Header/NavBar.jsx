@@ -1,12 +1,11 @@
-import Container from "../Container";
-import Label from "../../utilities/Label";
-
 export default function NavBar() {
   return (
-    <Container component="nav">
-      <ul>
-        <Label component={"li"}>Projects</Label>
+    <nav className="container">
+      <ul className="flex gap-4">
+        <li>Projects</li>
+        <li>Projects</li>
+        <li>Projects</li>
       </ul>
-    </Container>
+    </nav>
   );
 }
