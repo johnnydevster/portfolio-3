@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <Layout>
       <Container className="">
-        <Section className="">
+        <Section className="h-[200vh]">
           <div className="bg-black h-20 bg-opacity-40"></div>
           <Heading>Heading 1</Heading>
           <Heading size="lg">Heading 2</Heading>

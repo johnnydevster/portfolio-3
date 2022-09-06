@@ -8,6 +8,10 @@
         --header-height-minimized: 80px;
     }
 
+    li {
+        list-style-type: none;
+    }
+
     .theme-first {
         --color-primary: hsl
     }

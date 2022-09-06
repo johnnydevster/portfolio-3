@@ -4,7 +4,7 @@ export default function Container({
   className = "",
 }) {
   return (
-    <Component className={`${className} container mx-auto`}>
+    <Component className={`container mx-auto ${className}`}>
       {children}
     </Component>
   );
