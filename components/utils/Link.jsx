@@ -10,30 +10,32 @@ const variants = {
   },
   unhovered: {
     opacity: 0,
-    rotate: 2,
+    rotate: 1,
     x: -3,
     y: 3,
-    width: "50%",
+    width: 0,
   },
 };
 
-export default function NextLink({ href, children }) {
+export default function NextLink({ href, children, className }) {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <Link href={href} passHref>
-      <motion.a
-        className="block relative"
-        onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => setHovered(false)}
-      >
-        {children}
-        <motion.span
-          animate={hovered ? "hovered" : "unhovered"}
-          variants={variants}
-          className="absolute -left-0 -right-0 -bottom-[1px] border-b-4 border-yellow-400"
-        />
-      </motion.a>
-    </Link>
+    <span className={className}>
+      <Link href={href} passHref>
+        <a
+          className="relative inline"
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+        >
+          {children}
+          <motion.div
+            animate={hovered ? "hovered" : "unhovered"}
+            variants={variants}
+            className="absolute inline -left-0 -right-0 -bottom-[3px] bg-gradient-to-r from-yellow-500 to-red-400 h-[4px] rounded-full"
+          />
+        </a>
+      </Link>
+    </span>
   );
 }

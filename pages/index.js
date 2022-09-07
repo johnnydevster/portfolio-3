@@ -1,4 +1,5 @@
 import Layout from "../ui/layout/Layout";
+import Link from "../components/utils/Link";
 
 export default function Home() {
   return (
