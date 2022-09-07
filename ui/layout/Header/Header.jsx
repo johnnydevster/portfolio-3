@@ -1,5 +1,5 @@
-import AnimationElements from "./AnimationElements";
-import NavBar from "./NavBar";
+import AnimationElements from "./subcomponents/AnimationElements";
+import NavBar from "./subcomponents/NavBar";
 
 export default function Header() {
   return (

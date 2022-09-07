@@ -3,8 +3,8 @@ import Layout from "../ui/layout/Layout";
 export default function Home() {
   return (
     <Layout>
-      <section className="container section h-[200vh] flex flex-col gap-5">
-        <div className="bg-black h-20 bg-opacity-40"></div>
+      <section className="container section h-[200vh] flex flex-col gap-lg">
+        <div className="bg-black h-4xl bg-opacity-40"></div>
         <h1 className="heading-lg">Heading 1</h1>
         <h2 className="heading">Heading 2</h2>
         <h3 className="heading-sm">Heading 2</h3>

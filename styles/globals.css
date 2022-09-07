@@ -17,12 +17,12 @@
     /* ------------------------------------------------ Spacing */
     
     .container {
-        @apply px-4 sm:px-6 lg:px-10 mx-auto w-full;
-        max-width: 1024px;
+        @apply px-sm sm:px-md lg:px-lg mx-auto w-full;
+        max-width: 1280px;
     }
 
     .section {
-        @apply my-24;
+        @apply my-lg;
     }
 
     /* ------------------------------------------------ Fonts */
@@ -44,7 +44,7 @@
     }
 
     .label {
-        @apply uppercase font-semibold
+        @apply font-semibold text-xl font-inter tracking-wide
     }
 
 
