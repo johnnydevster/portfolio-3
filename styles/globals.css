@@ -17,12 +17,12 @@
     /* ------------------------------------------------ Spacing */
     
     .container {
-        @apply px-sm sm:px-md lg:px-lg mx-auto w-full;
+        @apply px-4 sm:px-8 lg:px-12 mx-auto w-full;
         max-width: 1280px;
     }
 
     .section {
-        @apply my-lg;
+        @apply my-12;
     }
 
     /* ------------------------------------------------ Fonts */
