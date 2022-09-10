@@ -7,8 +7,10 @@ const variants = {
     x: 0,
     y: 0,
     width: "100%",
+    opacity: 1,
   },
   unhovered: {
+    opacity: 0,
     rotate: 1,
     x: -3,
     y: 3,
@@ -29,9 +31,10 @@ export default function NextLink({ href, children, className }) {
         >
           {children}
           <motion.div
+            transition={{ ease: "circIn", duration: 0.1 }}
             animate={hovered ? "hovered" : "unhovered"}
             variants={variants}
-            className="absolute inline w-0 -left-0 -right-0 -bottom-[3px] bg-gradient-to-r from-yellow-500 to-red-400 h-[2px] rounded-full"
+            className="absolute inline w-0 -left-0 -right-0 -bottom-[3px] bg-gradient-to-r from-sky-500 to-sky-400 h-[3px] rounded-full"
           />
         </a>
       </Link>

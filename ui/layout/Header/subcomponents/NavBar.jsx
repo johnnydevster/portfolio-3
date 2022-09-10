@@ -2,7 +2,7 @@ import Link from "../../../../components/utils/Link";
 
 export default function NavBar() {
   return (
-    <nav className="container">
+    <nav className="container relative z-20">
       <ul className="label flex gap-10">
         <li>
           <Link href="/">Projects</Link>

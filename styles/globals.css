@@ -28,15 +28,15 @@
     /* ------------------------------------------------ Fonts */
 
     .heading-sm {
-        @apply text-xl font-bold tracking-wide
+        @apply text-2xl font-bold tracking-wide
     }
 
     .heading {
-        @apply heading-sm text-3xl
+        @apply heading-sm text-4xl
     }
 
     .heading-lg {
-        @apply heading-sm text-5xl
+        @apply heading-sm text-6xl
     }
 
     .body {

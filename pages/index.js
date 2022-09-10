@@ -1,8 +1,10 @@
+import HeroModule from "../components/modules/HeroModule";
 import Layout from "../ui/layout/Layout";
 
 export default function Home() {
   return (
     <Layout>
+      <HeroModule />
       <section className="container section h-[200vh] flex flex-col gap-4">
         <div className="bg-black h-20 bg-opacity-40"></div>
         <h1 className="heading-lg">Heading 1</h1>

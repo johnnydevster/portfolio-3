@@ -23,7 +23,7 @@ module.exports = {
       colors: {
         "slate-dark": {
           DEFAULT: "#090e19",
-          lighter: "#11192e",
+          lighter: "#0a1121",
         },
       },
     },
