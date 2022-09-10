@@ -17,6 +17,18 @@ export default function Home() {
           pellentesque sem, feugiat venenatis metus sem sed augue.
         </p>
         <p className="body">
+          Nulla pharetra egestas vulputate. Aenean eget imperdiet lorem. Duis
+          bibendum libero eu felis auctor, a faucibus ipsum pharetra. Vivamus
+          vestibulum, arcu dignissim tristique porttitor, lectus neque
+          pellentesque sem, feugiat venenatis metus sem sed augue.
+        </p>
+        <p className="body">
+          Nulla pharetra egestas vulputate. Aenean eget imperdiet lorem. Duis
+          bibendum libero eu felis auctor, a faucibus ipsum pharetra. Vivamus
+          vestibulum, arcu dignissim tristique porttitor, lectus neque
+          pellentesque sem, feugiat venenatis metus sem sed augue.
+        </p>
+        <p className="body">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
           posuere dolor ac accumsan consectetur. Quisque eleifend libero odio.
           Sed posuere congue lacinia. Nulla sollicitudin, est id ullamcorper
