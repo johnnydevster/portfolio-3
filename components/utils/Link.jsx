@@ -4,12 +4,10 @@ import { useState } from "react";
 
 const variants = {
   hovered: {
-    opacity: 1,
     x: 0,
     y: 0,
   },
   unhovered: {
-    opacity: 0,
     rotate: 1,
     x: -3,
     y: 3,
