@@ -6,8 +6,8 @@ export default function PlanetOne() {
   const [scale] = useScrollScaling();
 
   return (
-    <SlowHover className="relative z-[-10]">
-      <motion.div style={{ scale }}>
+    <SlowHover className="absolute z-[-10] left-20 bottom-20">
+      <motion.div style={{ scale, height: 800, width: 800 }} className="">
         <svg viewBox="613.01 536.447 180.038 137.518">
           <defs>
             <radialGradient
