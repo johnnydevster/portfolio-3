@@ -1,4 +1,5 @@
 import PlanetOne from "../../public/assets/svgs/PlanetOne";
+import Star from "../../public/assets/svgs/Star";
 import Avatar from "../Avatar";
 
 export default function HeroModule() {
@@ -9,6 +10,7 @@ export default function HeroModule() {
         <h2 className="label">Front End Web Developer</h2>
       </div>
       <PlanetOne />
+      <Star />
     </section>
   );
 }
