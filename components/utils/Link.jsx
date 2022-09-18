@@ -1,42 +1,32 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useState } from "react";
-
-const variants = {
-  hovered: {
-    x: 0,
-    y: 0,
-    width: "100%",
-    opacity: 1,
-  },
-  unhovered: {
-    opacity: 0,
-    rotate: 1,
-    x: -3,
-    y: 3,
-    width: 0,
-  },
-};
 
 export default function NextLink({ href, children, className }) {
-  const [hovered, setHovered] = useState(false);
-
   return (
     <span className={className}>
       <Link href={href} passHref>
-        <a
-          className="relative inline"
-          onMouseEnter={() => setHovered(true)}
-          onMouseLeave={() => setHovered(false)}
+        <motion.a
+          className="relative inline bg-clip-text"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0)",
+          }}
+          whileHover={{
+            backgroundClip: "text",
+            color: "transparent",
+            backgroundImage: [
+              "linear-gradient(to right, #bae6fd, #38bdf8)",
+              "linear-gradient(to right, #38bdf8, #bae6fd)",
+            ],
+            transition: {
+              duration: 0.8,
+              repeat: Infinity,
+              repeatType: "reverse",
+            },
+          }}
         >
           {children}
-          <motion.div
-            transition={{ ease: "circIn", duration: 0.1 }}
-            animate={hovered ? "hovered" : "unhovered"}
-            variants={variants}
-            className="absolute inline w-0 -left-0 -right-0 -bottom-[3px] bg-gradient-to-r from-sky-500 to-sky-400 h-[3px] rounded-full"
-          />
-        </a>
+        </motion.a>
       </Link>
     </span>
   );
