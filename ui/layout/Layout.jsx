@@ -1,6 +1,5 @@
 import Footer from "./footer/Footer";
-import Header from "./header/Header";
-import SocialWidget from "./SocialWidget";
+import Header from "./Header/Header";
 
 export default function Layout({ children }) {
   return (
