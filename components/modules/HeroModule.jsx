@@ -4,6 +4,7 @@ import Avatar from "../Avatar";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import { motion } from "framer-motion";
+import Waves from "../Waves";
 
 export default function HeroModule() {
   return (
@@ -35,6 +36,7 @@ export default function HeroModule() {
 
       {/*  <PlanetOne />
       <Star /> */}
+      <Waves />
     </section>
   );
 }
