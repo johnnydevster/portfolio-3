@@ -16,7 +16,7 @@ export default function Waves() {
           </defs>
           <path
             fill="url(#a)"
-            fill-rule="evenodd"
+            fillRule="evenodd"
             d="M -592.615 304.995 C -592.615 304.995 -182.717 502.995 218.385 502.995 C 555.05 502.995 1007.385 304.995 1007.385 304.995 L -592.615 304.995 Z"
             transform="matrix(-1, 0, 0, -1, 414.770032, 807.990381)"
           ></path>
@@ -35,7 +35,7 @@ export default function Waves() {
           </defs>
           <path
             fill="url(#a)"
-            fill-rule="evenodd"
+            fillRule="evenodd"
             d="M -592.615 304.995 C -592.615 304.995 -182.717 502.995 218.385 502.995 C 555.05 502.995 1007.385 304.995 1007.385 304.995 L -592.615 304.995 Z"
             transform="matrix(-1, 0, 0, -1, 414.770032, 807.990381)"
           ></path>
