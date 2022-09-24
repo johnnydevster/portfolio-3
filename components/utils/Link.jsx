@@ -19,7 +19,7 @@ export default function NextLink({ href, children, className }) {
               "linear-gradient(to right, #38bdf8, #bae6fd)",
             ],
             transition: {
-              duration: 0.8,
+              duration: 0.4,
               repeat: Infinity,
               repeatType: "reverse",
             },
