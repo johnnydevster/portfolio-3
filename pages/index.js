@@ -1,5 +1,5 @@
 import HeroModule from "../components/modules/HeroModule";
-import Layout from "../ui/layout/Layout";
+import Layout from "../components/ui/Layout";
 
 export default function Home() {
   return (

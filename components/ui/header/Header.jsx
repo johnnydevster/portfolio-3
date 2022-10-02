@@ -25,7 +25,7 @@ export default function Header() {
             ? "var(--header-height-minimized)"
             : "var(--header-height-expanded)",
         }}
-        className="sticky top-0 flex items-center group"
+        className="sticky top-0 flex items-center group z-[9999]"
       >
         <AnimationElements />
         <NavBar />

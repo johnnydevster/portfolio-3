@@ -1,4 +1,4 @@
-import Link from "../../../../components/utils/Link";
+import Link from "../../../utils/Link";
 
 export default function NavBar() {
   return (

@@ -3,11 +3,11 @@ import { useParallax } from "react-scroll-parallax";
 
 export default function Waves() {
   const parallaxForeground = useParallax({
-    speed: -5,
+    speed: -6,
   });
 
   const parallaxMiddleground = useParallax({
-    speed: -7,
+    speed: -8,
   });
 
   const parallaxBackground = useParallax({
@@ -15,11 +15,11 @@ export default function Waves() {
   });
 
   return (
-    <div className="absolute bottom-0 left-0 right-0 z-[1000]">
+    <div className="absolute bottom-0 left-0 right-0 z-[1000] opacity-50 scale-[0.8]">
       <motion.div className="relative">
         <div ref={parallaxForeground.ref}>
           <motion.svg
-            className="absolute -bottom-[40px] left-[40%] scale-[1.1] z-[800]"
+            className="absolute -bottom-[50px] left-[40%] scale-[1.1] z-[800]"
             viewBox="-592.615 304.995 1600 198"
             width="1600"
             height="198"

@@ -6,7 +6,7 @@ export default function useScrollScaling() {
   const [scale, setScale] = useState();
   useEffect(() => {
     return scrollY.onChange((latest) => {
-      setScale(1 + latest * -0.0005);
+      setScale(1 + latest * -0.00015);
     });
   }, []);
   return [scale, setScale];

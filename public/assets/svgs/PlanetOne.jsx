@@ -1,5 +1,5 @@
 import { motion, useScroll } from "framer-motion";
-import SlowHover from "../../../components/SlowHover";
+import SlowHover from "../../../components/utils/SlowHover";
 import useScrollScaling from "../../../hooks/useScrollScaling";
 
 export default function PlanetOne() {
@@ -7,7 +7,10 @@ export default function PlanetOne() {
 
   return (
     <SlowHover className="absolute z-[-10] left-20 bottom-20">
-      <motion.div style={{ scale, height: 800, width: 800 }} className="">
+      <motion.div
+        style={{ scale, height: 500, width: 300 }}
+        className="opacity-30"
+      >
         <svg viewBox="613.01 536.447 180.038 137.518">
           <defs>
             <radialGradient

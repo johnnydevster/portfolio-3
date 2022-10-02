@@ -44,7 +44,7 @@
     }
 
     .label {
-        @apply font-semibold text-xl font-inter tracking-wide
+        @apply font-semibold text-xl font-inter tracking-wide uppercase
     }
 
 

@@ -4,7 +4,7 @@ import Avatar from "../Avatar";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import { motion } from "framer-motion";
-import Waves from "../Waves";
+import Waves from "../ForeGround";
 
 export default function HeroModule() {
   return (
@@ -33,9 +33,16 @@ export default function HeroModule() {
       </div>
 
       <Avatar />
+      <PlanetOne />
+      <Star y={5} x={5} />
+      <Star y={20} x={25} />
+      <Star y={12} x={50} />
+      <Star y={10} x={80} />
+      <Star y={40} x={95} />
+      <Star y={65} x={10} />
+      <Star y={65} x={40} />
+      <Star y={65} x={80} />
 
-      {/*  <PlanetOne />
-      <Star /> */}
       <Waves />
     </section>
   );
