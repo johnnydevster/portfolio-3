@@ -1,5 +1,5 @@
-import AnimationElements from "./subcomponents/AnimationElements";
-import NavBar from "./subcomponents/NavBar";
+import AnimationElements from "./AnimationElements";
+import NavBar from "./NavBar";
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";

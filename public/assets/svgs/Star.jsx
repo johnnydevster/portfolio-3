@@ -1,12 +1,17 @@
-import { motion } from "framer-motion";
+import { motion, useTransform, useScroll } from "framer-motion";
+import { useParallax } from "react-scroll-parallax";
 
 export default function Star({ size, x, y }) {
+  const { scrollY } = useScroll();
+  const y2 = useTransform(scrollY, [0, 100], [0, 30], { clamp: false });
+
   return (
     <motion.div
-      className="absolute z-[-10] text-sky-200"
+      className="absolute z-[-100] text-sky-200"
       style={{
         height: 30,
         width: 30,
+        y: y2,
         top: `${y}%`,
         left: `${x}%`,
         opacity: 0.2,

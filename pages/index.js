@@ -1,4 +1,4 @@
-import HeroModule from "../components/modules/HeroModule";
+import HeroModule from "../components/modules/heroModule/HeroModule";
 import Layout from "../components/ui/Layout";
 
 export default function Home() {
