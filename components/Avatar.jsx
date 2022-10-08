@@ -6,6 +6,7 @@ import ArticleIcon from "@mui/icons-material/Article";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Link from "next/link";
 
 const variants = {
   initial: {
@@ -20,7 +21,7 @@ const variants = {
 };
 
 export default function Avatar() {
-  const [showSocials, setShowSocials] = useState(true);
+  const [showSocials, setShowSocials] = useState(false);
   return (
     <div
       onMouseEnter={() => setShowSocials(true)}
@@ -47,20 +48,26 @@ export default function Avatar() {
         }}
         className="label text-sm text-sky-200 uppercase flex flex-col items-end justify-around absolute -inset-4 z-[-999] rounded-full bg-gradient-to-r from-sky-500/10 to-sky-900/10 border-slate-dark-lighter border-[12px]"
       >
-        <a href="/" className="mr-[30px] group transition-all duration-500">
-          <span className="mr-6 group-hover:text-sky-100">GitHub</span>
-          <GitHubIcon className="h-8 w-8 fill-yellow-300 group-hover:fill-yellow-200" />
-        </a>
-        <a href="/" className="mr-[15px] group">
-          <span className="mr-6 group-hover:text-sky-100" href="/">
-            LinkedIn
-          </span>
-          <LinkedInIcon className="h-9 w-9 fill-yellow-300 group-hover:fill-yellow-200" />
-        </a>
-        <a href="/" className="mr-[30px] group">
-          <span className="mr-6 group-hover:text-sky-100">Resume</span>
-          <ArticleIcon className="h-8 w-8 fill-yellow-300 group-hover:fill-yellow-200" />
-        </a>
+        <Link href="/">
+          <a className="mr-[30px] group transition-all duration-500">
+            <span className="mr-6 group-hover:text-sky-100">GitHub</span>
+            <GitHubIcon className="h-8 w-8 fill-yellow-300 group-hover:fill-yellow-200" />
+          </a>
+        </Link>
+        <Link href="/">
+          <a className="mr-[15px] group">
+            <span className="mr-6 group-hover:text-sky-100" href="/">
+              LinkedIn
+            </span>
+            <LinkedInIcon className="h-9 w-9 fill-yellow-300 group-hover:fill-yellow-200" />
+          </a>
+        </Link>
+        <Link href="/">
+          <a className="mr-[30px] group">
+            <span className="mr-6 group-hover:text-sky-100">Resume</span>
+            <ArticleIcon className="h-8 w-8 fill-yellow-300 group-hover:fill-yellow-200" />
+          </a>
+        </Link>
       </motion.div>
     </div>
   );
