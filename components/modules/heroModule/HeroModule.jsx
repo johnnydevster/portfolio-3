@@ -58,7 +58,7 @@ export default function HeroModule() {
   }, []);
 
   return (
-    <section className="h-[calc(100vh-var(--header-height-minimized))] relative w-full overflow-hidden grid grid-cols-2 place-items-center">
+    <section className="h-[calc(100vh-var(--header-height-minimized))] relative w-full overflow-hidden md:grid grid-cols-2 place-items-center">
       {/*       <canvas
         width="32"
         height="32"

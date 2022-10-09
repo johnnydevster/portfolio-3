@@ -16,6 +16,9 @@ module.exports = {
     },
 
     extend: {
+      screens: {
+        fbp: "1024px",
+      },
       spacing: {
         "header-lg": "var(--header-height-expanded)",
         "header-md": "var(--header-height-minimized)",

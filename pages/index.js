@@ -1,4 +1,5 @@
 import HeroModule from "../components/modules/heroModule/HeroModule";
+import MyProjectsModule from "../components/modules/myProjectsModule/MyProjectsModule";
 import Layout from "../components/ui/Layout";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <Layout>
       <HeroModule />
       <section className="container section h-[200vh] flex flex-col gap-4">
+        <MyProjectsModule />
         <div className="bg-black h-20 bg-opacity-40"></div>
         <h1 className="heading-lg">Heading 1</h1>
         <h2 className="heading">Heading 2</h2>

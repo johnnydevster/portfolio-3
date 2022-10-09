@@ -27,7 +27,7 @@ export default function HeroTitle() {
         variants={container}
         initial="hidden"
         animate="show"
-        className="flex flex-col gap-2"
+        className="flex flex-col gap-1 lg:gap-2"
       >
         <motion.span variants={item} className="label text-slate-300">
           👋 hey there, I&apos;m
@@ -35,7 +35,7 @@ export default function HeroTitle() {
         <motion.h1 variants={item} className="heading-lg text-slate-100">
           Johnny Backlund
         </motion.h1>
-        <motion.h2 variants={item} className="label text-sky-200 text-2xl">
+        <motion.h2 variants={item} className="label text-sky-200 lg:text-2xl">
           <span>
             <KeyboardArrowLeftIcon />
           </span>

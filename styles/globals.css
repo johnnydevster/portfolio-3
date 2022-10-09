@@ -28,23 +28,45 @@
     /* ------------------------------------------------ Fonts */
 
     .heading-sm {
-        @apply text-2xl font-bold tracking-wide
+        @apply text-xl font-bold tracking-wide
     }
 
     .heading {
-        @apply heading-sm text-4xl
+        @apply heading-sm text-2xl
     }
 
     .heading-lg {
-        @apply heading-sm text-6xl
+        @apply heading-sm text-4xl
     }
 
     .body {
-        @apply text-lg
+        @apply text-base
     }
 
     .label {
-        @apply font-semibold text-xl font-inter tracking-wide
+        @apply font-semibold text-lg font-inter tracking-wide
+    }
+
+    @screen fbp {
+        .heading-sm {
+            @apply text-2xl font-bold tracking-wide
+        }
+    
+        .heading {
+            @apply heading-sm text-4xl
+        }
+    
+        .heading-lg {
+            @apply heading-sm text-6xl
+        }
+    
+        .body {
+            @apply text-lg
+        }
+    
+        .label {
+            @apply font-semibold text-xl font-inter tracking-wide
+        }
     }
 
 
