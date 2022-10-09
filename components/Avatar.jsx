@@ -21,7 +21,7 @@ const variants = {
 };
 
 export default function Avatar() {
-  const [showSocials, setShowSocials] = useState(false);
+  const [showSocials, setShowSocials] = useState(true);
   return (
     <div
       onMouseEnter={() => setShowSocials(true)}
@@ -39,7 +39,7 @@ export default function Avatar() {
         variants={variants}
         animate={showSocials ? "show" : "hide"}
         transition={{
-          duration: 0.3,
+          duration: 0.4,
           type: "spring",
         }}
         style={{
@@ -51,7 +51,11 @@ export default function Avatar() {
         <Link href="/">
           <a className="mr-[30px] group transition-all duration-500">
             <span className="mr-6 group-hover:text-sky-100">GitHub</span>
-            <GitHubIcon className="h-8 w-8 fill-yellow-300 group-hover:fill-yellow-200" />
+            <GitHubIcon
+              className={`h-8 w-8 ${
+                showSocials ? "fill-yellow-300" : "fill-sky-200"
+              } group-hover:fill-yellow-200`}
+            />
           </a>
         </Link>
         <Link href="/">
@@ -59,13 +63,21 @@ export default function Avatar() {
             <span className="mr-6 group-hover:text-sky-100" href="/">
               LinkedIn
             </span>
-            <LinkedInIcon className="h-9 w-9 fill-yellow-300 group-hover:fill-yellow-200" />
+            <LinkedInIcon
+              className={`h-9 w-9 ${
+                showSocials ? "fill-yellow-300" : "fill-sky-200"
+              } group-hover:fill-yellow-200`}
+            />
           </a>
         </Link>
         <Link href="/">
           <a className="mr-[30px] group">
             <span className="mr-6 group-hover:text-sky-100">Resume</span>
-            <ArticleIcon className="h-8 w-8 fill-yellow-300 group-hover:fill-yellow-200" />
+            <ArticleIcon
+              className={`h-8 w-8 ${
+                showSocials ? "fill-yellow-300" : "fill-sky-200"
+              } group-hover:fill-yellow-200`}
+            />
           </a>
         </Link>
       </motion.div>
