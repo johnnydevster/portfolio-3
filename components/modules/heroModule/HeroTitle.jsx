@@ -27,7 +27,7 @@ export default function HeroTitle() {
         variants={container}
         initial="hidden"
         animate="show"
-        className="flex flex-col gap-1 lg:gap-2"
+        className="flex flex-col gap-1 lg:gap-2 relative z-10"
       >
         <motion.span variants={item} className="label text-slate-300">
           👋 hey there, I&apos;m

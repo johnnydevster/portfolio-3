@@ -26,7 +26,7 @@ export default function Avatar() {
     <div
       onMouseEnter={() => setShowSocials(true)}
       onMouseLeave={() => setShowSocials(false)}
-      className="relative z-[999] rounded-full h-40 w-40 lg:h-80 lg:w-80"
+      className="relative z-[9950] rounded-full h-48 w-48 lg:h-80 lg:w-80 mr-32 lg:mr-48 my-12"
     >
       <Image
         alt="realistically illustrated astronaut with smoke coming out of the suit"
@@ -82,7 +82,7 @@ export default function Avatar() {
         </Link>
       </motion.div>
       {/* Mobile socials */}
-      <div className="absolute top-1/2 -translate-y-1/2 left-[calc(100%-50px)] z-[-20] label uppercase text-xs flex lg:hidden flex-col w-44 pl-16 gap-4 text-sky-200 bg-slate-dark-lighter/80 p-2 rounded border-r-4 border-b-4 border-slate-dark">
+      <div className="absolute top-1/2 -translate-y-1/2 left-[calc(100%-50px)] z-[-20] label uppercase text-xs flex lg:hidden flex-col w-44 pl-16 gap-4 text-sky-200 bg-slate-dark-lighter/80 p-2 rounded-lg border-r-4 border-b-4 border-slate-dark">
         <Link href="/">
           <a className="flex justify-between items-center">
             <span>GitHub</span>

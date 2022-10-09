@@ -58,17 +58,19 @@ export default function HeroModule() {
   }, []);
 
   return (
-    <section className="h-[calc(100vh-var(--header-height-minimized))] relative w-full overflow-hidden md:grid grid-cols-2 place-items-center">
+    <section className="h-[calc(100vh-var(--header-height-minimized))] relative w-full overflow-hidden">
       {/*       <canvas
         width="32"
         height="32"
         id="canv"
         className="absolute inset-0 w-full h-full z-[-9999] mix-blend-plus-lighter"
       /> */}
-      <HeroTitle />
+      <div className="flex flex-col lg:flex-row max-w-7xl mx-auto justify-between items-center my-12 sm:my-24 h-[50%] sm:h-[60%] lg:h-[70%]">
+        <HeroTitle />
+        <Avatar />
+        <PlanetOne />
+      </div>
 
-      <Avatar />
-      <PlanetOne />
       <Star y={5} x={5} />
       <Star y={20} x={25} />
       <Star y={12} x={50} />
