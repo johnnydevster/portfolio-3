@@ -1,8 +1,12 @@
+import { PortableText } from "@portabletext/react";
 import HeroModule from "../components/modules/heroModule/HeroModule";
 import MyProjectsModule from "../components/modules/myProjectsModule/MyProjectsModule";
 import Layout from "../components/ui/Layout";
 
-export default function Home() {
+import { client } from "/lib/sanity";
+
+export default function Home({ projects }) {
+  console.log(projects);
   return (
     <Layout>
       <HeroModule />
@@ -26,4 +30,14 @@ export default function Home() {
       </section>
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  const projects = await client.fetch(`*[_type == "project"]`);
+
+  return {
+    props: {
+      projects,
+    },
+  };
 }
