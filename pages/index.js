@@ -2,8 +2,7 @@ import { PortableText } from "@portabletext/react";
 import HeroModule from "../components/modules/heroModule/HeroModule";
 import MyProjectsModule from "../components/modules/myProjectsModule/MyProjectsModule";
 import Layout from "../components/ui/Layout";
-
-import { client } from "/lib/sanity";
+import { getProjects } from "../lib/sanity";
 
 export default function Home({ projects }) {
   console.log(projects);
@@ -33,7 +32,7 @@ export default function Home({ projects }) {
 }
 
 export async function getStaticProps() {
-  const projects = await client.fetch(`*[_type == "project"]`);
+  const projects = await getProjects();
 
   return {
     props: {
