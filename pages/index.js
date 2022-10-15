@@ -5,12 +5,11 @@ import Layout from "../components/ui/Layout";
 import { getProjects } from "../lib/sanity";
 
 export default function Home({ projects }) {
-  console.log(projects);
   return (
     <Layout>
       <HeroModule />
       <section className="container section h-[200vh] flex flex-col gap-4">
-        <MyProjectsModule />
+        <MyProjectsModule projects={projects} />
         <div className="bg-black h-20 bg-opacity-40"></div>
         <h1 className="heading-lg">Heading 1</h1>
         <h2 className="heading">Heading 2</h2>

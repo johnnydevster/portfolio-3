@@ -56,7 +56,7 @@ export default function PlanetOne() {
               {/*  <style>.cls-1{fill:url(#radial-gradient);}.cls-10,.cls-2,.cls-20,.cls-21{fill:#fff;}.cls-2{opacity:0.05;}.cls-3{fill:url(#radial-gradient-2);}.cls-4{fill:url(#radial-gradient-3);}.cls-5{fill:url(#radial-gradient-4);}.cls-6{fill:url(#radial-gradient-5);}.cls-7{fill:url(#radial-gradient-6);}.cls-8{fill:url(#radial-gradient-7);}.cls-9{fill:url(#radial-gradient-8);}.cls-11{fill:url(#radial-gradient-9);}.cls-12{fill:url(#radial-gradient-10);}.cls-13{fill:url(#radial-gradient-11);}.cls-14{fill:url(#radial-gradient-12);}.cls-15,.cls-16{fill:#f9e600;}.cls-15{opacity:0.13;}.cls-16{opacity:0.53;}.cls-17{fill:#1a013c;}.cls-18{fill:url(#radial-gradient-13);}.cls-19{fill:url(#radial-gradient-14);}.cls-20{font-size:86.75px;}.cls-20,.cls-21{font-family:Abel-Regular, Abel;}.cls-21{font-size:24px;}.cls-22{letter-spacing:-0.01em;}</style> */}
             </defs>
             <circle
-              class="cls-18"
+              className="cls-18"
               cx="742.57"
               cy="591.88"
               r="48.62"
