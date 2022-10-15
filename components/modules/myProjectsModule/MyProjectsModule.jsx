@@ -12,12 +12,16 @@ export default function MyProjectsModule({ projects }) {
       </div>
       <div className="flex flex-col gap-16">
         {projects?.map((project) => (
-          <div key={project._id}>
-            <h2>{project.title}</h2>
-            <span>{project.summary}</span>
+          <div key={project._id} className="flex flex-col gap-3">
+            <div>
+              <h2 className="heading-sm uppercase">{project.title}</h2>
+              <span className="label text-yellow-300">{project.summary}</span>
+            </div>
+            <div className="flex flex-col gap-2">
+              <PortableText value={project.body} />
+            </div>
             <TechStack techStack={project.techStack} />
             <Links links={project?.links} />
-            <PortableText value={project.body} />
           </div>
         ))}
       </div>

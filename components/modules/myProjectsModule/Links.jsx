@@ -1,18 +1,24 @@
-import React from "react";
+import { ExitToApp, GitHub } from "@mui/icons-material";
 
 export default function Links({ links }) {
   return (
-    <ul>
+    <ul className="flex items-center gap-2">
       {links?.github && (
         <li>
-          <a href={links?.github}>GitHub</a>
+          <a href={links?.github}>
+            <GitHub className="fill-yellow-300 hover:fill-yellow-200" />
+          </a>
         </li>
       )}
       {links?.live && (
         <li>
-          <a href={links?.live}>Live site</a>
+          <a href={links?.live}>
+            <ExitToApp className="aspect-square h-12 w-[27px] relative top-px fill-yellow-300 hover:fill-yellow-200" />
+          </a>
         </li>
       )}
+
+      <ExitToApp className="aspect-square h-12 w-[27px] relative top-px fill-yellow-300 hover:fill-yellow-200 cursor-pointer" />
     </ul>
   );
 }
