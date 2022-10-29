@@ -8,7 +8,7 @@ export default function Home({ projects }) {
   return (
     <Layout>
       <HeroModule />
-      <section className="container section h-[200vh] flex flex-col gap-4">
+      <section className="container section flex flex-col gap-4">
         <MyProjectsModule projects={projects} />
         <div className="bg-black h-20 bg-opacity-40"></div>
         <h1 className="heading-lg">Heading 1</h1>

@@ -1,9 +1,9 @@
 import { PortableText } from "@portabletext/react";
+import SanityImage from "../../SanityImage";
 import Links from "./Links";
 import TechStack from "./TechStack";
 
 export default function MyProjectsModule({ projects }) {
-  console.log(projects);
   return (
     <section>
       <div>
@@ -12,16 +12,21 @@ export default function MyProjectsModule({ projects }) {
       </div>
       <div className="flex flex-col gap-16">
         {projects?.map((project) => (
-          <div key={project._id} className="flex flex-col gap-3">
+          <div key={project?._id} className="flex flex-col gap-6">
             <div>
-              <h2 className="heading-sm uppercase">{project.title}</h2>
-              <span className="label text-yellow-300">{project.summary}</span>
+              <h2 className="heading-sm uppercase">{project?.title}</h2>
+              <span className="label text-yellow-300">{project?.summary}</span>
             </div>
-            <div className="flex flex-col gap-2">
-              <PortableText value={project.body} />
+            <div className="flex flex-col gap-2 max-w-xl bg-slate-dark bg-opacity-50 p-3 rounded">
+              <PortableText value={project?.body} />
             </div>
-            <TechStack techStack={project.techStack} />
-            <Links links={project?.links} />
+            <div>
+              <TechStack techStack={project?.techStack} />
+              <Links links={project?.links} />
+            </div>
+            <div className="relative aspect-[4/3] max-w-xl">
+              <SanityImage image={project?.mainImage} />
+            </div>
           </div>
         ))}
       </div>
